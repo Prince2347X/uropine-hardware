@@ -22,30 +22,9 @@ String createJSON(int pressureData) {
   return output;
 }
 
-const int WINDOW_SIZE = 5;  // Number of readings to average
-int readings[WINDOW_SIZE];  // Array to store readings
-int readIndex = 0;         // Index for the current reading
-int total = 0;            // Running total
-
 int readPressure() {
-    // Subtract the oldest reading from the total
-  total = total - readings[readIndex];
-  
-  // Read the sensor
   int sensorValue = analogRead(inputPin);
-  
-  // Add the new reading to the total
-  readings[readIndex] = sensorValue;
-  total = total + sensorValue;
-  
-  // Advance to the next position in the array
-  readIndex = (readIndex + 1) % WINDOW_SIZE;
-  
-  // Calculate and return the average
-  return total / WINDOW_SIZE;
-//  int sensorValue = analogRead(inputPin);
-//  int pressure = sensorValue * (100 / 4095.0);
-//  return pressure;
+  return sensorValue;
 }
 
 // WebSocket event handler
