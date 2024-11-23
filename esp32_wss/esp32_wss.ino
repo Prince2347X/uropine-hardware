@@ -1,3 +1,40 @@
+/**
+ * @file esp32_wss.ino
+ * @brief ESP32 WebSocket Server for Pressure Sensor Data
+ *
+ * This code is designed to run on an ESP32 microcontroller and sets up a WebSocket server
+ * to transmit pressure sensor data to connected clients. The ESP32 operates as a Wi-Fi
+ * Access Point, allowing clients to connect and receive real-time pressure data in JSON format.
+ *
+ * @note This code is being used with version 0.5 of our hardware. We have used a best fit
+ * equation to plot the graph in the app. The equation is as follows:
+ * cm of H₂O = 0.282 × (sensor value) − 482.69
+ *
+ * Libraries used:
+ * - ArduinoJson: For JSON formatting
+ * - ESPAsyncWebServer: For WebSocket server functionality
+ * - WiFi: For Wi-Fi connectivity
+ *
+ * Hardware connections:
+ * - Pressure sensor connected to analog input pin 34
+ *
+ * Functionality:
+ * - Reads pressure data from the sensor
+ * - Formats the data into a JSON object
+ * - Sends the JSON data to all connected WebSocket clients
+ * - Prints the pressure data to the USB serial monitor
+ *
+ * WebSocket events:
+ * - Client connect and disconnect events are logged to the serial monitor
+ *
+ * Wi-Fi credentials:
+ * - SSID: "Uropine Device 1"
+ * - Password: "rsi_12345"
+ *
+ * @version 0.5
+ * @date 2024-10-01
+ */
+
 #include <ArduinoJson.h>      // For JSON formatting
 #include <ESPAsyncWebServer.h>// For WebSocket
 #include <WiFi.h>
