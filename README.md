@@ -53,6 +53,7 @@ The ESP32 reads pressure data from the sensor connected to pin 34.
 
 ### WebSocket Server
 
+- **IP Address**: `192.168.4.1`
 - **Port**: `80`
 - **Endpoint**: `/ws`
 
