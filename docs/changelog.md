@@ -5,12 +5,10 @@
 
 | Metadata      | Value                   |
 |---------------|-------------------------|
-| Version       | 1.0.0                   |
+| Version       | 0.5.0                   |
 | Release Date  | 2024-09-10              |
 | Codename      | Prototype Alpha         |
-| Contributors  | [Name1], [Name2]        |
 | Status        | Deprecated              |
-| Hardware Docs | [Link to detailed docs] |
 
 </details>
 
@@ -24,12 +22,12 @@ Image
 
 > **Properties**
 > 
-> | Property    | Value      |
-> |-------------|------------|
-> | Shape       | Cuboidal   |
-> | Color       | Black      |
-> | Dimensions  |            |
-> | Weight      |            |
+> | Property    | Value        |
+> |-------------|--------------|
+> | Shape       | Cuboidal     |
+> | Color       | Black        |
+> | Dimensions  | 200x90x60 mm |
+> | Weight      |              |
 
 ### Components
 
@@ -54,16 +52,4 @@ Image
 
 # v1 - Uropine Microcontroller
 
-<details>
-<summary>Version Metadata</summary>
-
-| Metadata      | Value                   |
-|---------------|-------------------------|
-| Version       | 0.1.0                   |
-| Release Date  | YYYY-MM-DD              |
-| Codename      | Circuit Breaker         |
-| Contributors  | [Name1], [Name2]        |
-| Status        | [Current/Beta/etc]      |
-| Hardware Docs | [Link to detailed docs] |
-
-</details>
+TBD
